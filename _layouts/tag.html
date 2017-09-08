@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<!-- TO DO -->
+<div class="breadcrumb">
+  <a href="/tags/">Tags</a> / {{ page.title }}
+</div>
+
+<div class="logo-previews row">
+  {% assign filtered_posts = site.posts | where_exp: 'post', 'post.tags contains page.title' %}
+  {% for post in site.posts %}
+    {% include logo-preview.html %}
+  {% endfor %}
+</div>

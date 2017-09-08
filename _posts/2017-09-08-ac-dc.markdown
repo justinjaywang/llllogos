@@ -1,0 +1,13 @@
+---
+title: AC/DC
+date: 2017-09-08
+designer: Gerard Huerta
+country: USA
+year: 1977
+tags:
+- music
+- band
+- blackletter
+image: "/uploads/ac-dc.svg"
+---
+

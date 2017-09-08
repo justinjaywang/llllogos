@@ -1,0 +1,107 @@
+title: llllogos
+timezone: America/New_York
+url: http://llllogos.com
+description: Online archive of logos, curated by Justin Jay Wang.
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+  post_tags:
+    title: Post Tags
+    output: true
+  designers:
+    title: Designers
+    output: true
+  countries:
+    title: Countries
+    output: true
+  years:
+    title: Years
+    output: true
+  featured:
+    title: Featured
+    output: true
+defaults:
+- scope:
+    path: ''
+  values:
+    layout: post
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/:title/"
+    layout: post
+    designer: 
+    country: 
+    year: 
+    tags: 
+- scope:
+    path: ''
+    type: post_tags
+  values:
+    permalink: "/tags/:title/"
+    layout: tag
+- scope:
+    path: ''
+    type: designers
+  values:
+    permalink: "/designers/:title/"
+    layout: tag
+- scope:
+    path: ''
+    type: countries
+  values:
+    permalink: "/countries/:title/"
+    layout: tag
+- scope:
+    path: ''
+    type: years
+  values:
+    permalink: "/years/:title/"
+    layout: tag
+- scope:
+    path: ''
+    type: featured
+  values:
+    permalink: "/featured/:title/"
+    layout: featured
+permalink: pretty
+exclude:
+- Gemfile
+- Gemfile.lock
+- README*
+- '.gitignore'
+gems:
+- jekyll-sitemap
+- jekyll-redirect-from
+- jekyll-seo-tag
+- jekyll-paginate
+paginate: 72
+paginate_path: "/page/:num/"
+twitter:
+  username: llllogos
+logo: 
+markdown: kramdown
+highlighter: rouge
+excerpt_separator: |2+
+
+
+
+sass:
+  sass_dir: assets/styles/
+  style: compressed
+repository: justinjaywang/llllogos
+google_analytics: 
+date_format: "%B %-d, %Y"
+nav:
+  header:
+  - text: Directory
+    link: /
+  - text: Featured
+    link: /featured/
+  - text: About
+    link: /about/

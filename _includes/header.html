@@ -1,0 +1,14 @@
+<header class="header container">
+  <nav class="nav row">
+    <div class="nav__title col">
+      <a href="/">{{ site.title }}</a>
+    </div>
+    {% capture nav__items %}
+      <ul class="nav__items col">
+        {% for item in site.nav.header %}
+          <li class="nav__item"><a href="{{ item.link }}" class=" {% unless page.url contains item.link %} faded{% endunless %}">{{ item.text }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endcapture %}{{ nav__items | normalize_whitespace | replace: '> <', '><' }}
+  </nav>
+</header>
