@@ -2,14 +2,28 @@
 layout: default
 ---
 
-<!-- TO DO -->
 <div class="breadcrumb">
-  <a href="/tags/">Tags</a> / {{ page.title }}
+  <a href="../">
+    {% if page.collection == 'post_tags' %}
+      Tags
+    {% else %}
+      {% assign collection = site.collections | where_exp: 'collection', 'collection.label == page.collection' %}
+      {{ collection[0].title }}
+    {% endif %}
+  </a> / {{ page.title }}
 </div>
 
 <div class="logo-previews row">
-  {% assign filtered_posts = site.posts | where_exp: 'post', 'post.tags contains page.title' %}
-  {% for post in site.posts %}
+  {% if page.collection == 'post_tags' %}
+    {% assign filtered_posts = site.posts | where_exp: 'post', 'post.tags contains page.title' %}
+  {% elsif page.collection == 'designers' %}
+    {% assign filtered_posts = site.posts | where_exp: 'post', 'post.designer == page.title' %}
+  {% elsif page.collection == 'countries' %}
+    {% assign filtered_posts = site.posts | where_exp: 'post', 'post.country == page.title' %}
+  {% elsif page.collection == 'years' %}
+    {% assign filtered_posts = site.posts | where_exp: 'post', 'post.year == page.title' %}
+  {% endif %}
+  {% for post in filtered_posts %}
     {% include logo-preview.html %}
   {% endfor %}
 </div>

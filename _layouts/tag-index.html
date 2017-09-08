@@ -2,4 +2,32 @@
 layout: default
 ---
 
-This is the tag index layout. TO DO.
+{% if page.url == '/tags/' %}
+  <h1>Tags</h1>
+  <ul>
+    {% for tag in site.post_tags %}
+      <li><a href="{{ tag.url }}">{{ tag.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% elsif page.url == '/designers/' %}
+  <h1>Designers</h1>
+  <ul>
+    {% for designer in site.designers %}
+      <li><a href="{{ designer.url }}">{{ designer.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% elsif page.url == '/countries/' %}
+  <h1>Countries</h1>
+  <ul>
+    {% for country in site.countries %}
+      <li><a href="{{ country.url }}">{{ country.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% elsif page.url == '/years/' %}
+  <h1>Years</h1>
+  <ul>
+    {% for year in site.years %}
+      <li><a href="{{ year.url }}">{{ year.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endif %}
