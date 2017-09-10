@@ -59,6 +59,17 @@
           transition: transform $transition;
 }
 
+@mixin column-count($n) {
+  -webkit-column-count: $n;
+     -moz-column-count: $n;
+          column-count: $n;
+}
+@mixin column-gap($gap) {
+  -webkit-column-gap: $gap;
+     -moz-column-gap: $gap;
+          column-gap: $gap;
+}
+
 // easings
 // -------
 

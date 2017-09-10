@@ -1,4 +1,4 @@
 ---
-layout: featured
+layout: featured-index
 ---
 

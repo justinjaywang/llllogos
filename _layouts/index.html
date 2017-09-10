@@ -2,11 +2,47 @@
 layout: default
 ---
 
-<ul class="filters">
-  <li>Designers</li>
-  <li>Countries</li>
-  <li>Years</li>
-  <li>Tags</li>
+<ul>
+  <li class="filter">
+    <details class="filter__details">
+      <summary class="filter__summary"><h2>Designers</h2></summary>
+      <ul class="tag-items">
+        {% for designer in site.designers %}
+          <li class="tag-item"><a href="{{ designer.url }}">{{ designer.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </details>
+  </li>
+  <li class="filter">
+    <details class="filter__details">
+      <summary class="filter__summary"><h2>Countries</h2></summary>
+      <ul class="tag-items">
+        {% for country in site.countries %}
+          <li class="tag-item"><a href="{{ country.url }}">{{ country.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </details>
+  </li>
+  <li class="filter">
+    <details class="filter__details">
+      <summary class="filter__summary"><h2>Years</h2></summary>
+      <ul class="tag-items">
+        {% for year in site.years %}
+          <li class="tag-item"><a href="{{ year.url }}">{{ year.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </details>
+  </li>
+  <li class="filter">
+    <details class="filter__details">
+      <summary class="filter__summary"><h2>Tags</h2></summary>
+      <ul class="tag-items">
+        {% for tag in site.post_tags %}
+          <li class="tag-item"><a href="{{ tag.url }}">{{ tag.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </details>
+  </li>
 </ul>
 
 <div class="logo-previews row">

@@ -27,6 +27,7 @@ body {
   color: #000;
   letter-spacing: 0.005em;
 }
+@include selection(#000, #fff);
 img,
 video,
 iframe {
@@ -39,6 +40,12 @@ video {
 a {
   color: inherit;
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:active {
+    opacity: $opacity--faded;
+  }
 }
 
 // typography
@@ -47,6 +54,9 @@ a {
 strong,
 b {
   font-weight: bold;
+}
+h1 {
+  @extend u;
 }
 em,
 i {
@@ -66,8 +76,21 @@ samp {
   overflow: auto;
   white-space: pre;
 }
-h1 {
-  font-weight: bold;
+summary:hover {
+  @extend u;
+}
+details[open] > summary {
+  @extend u; // TO DO
+}
+summary {
+  display: inline-block;
+  outline: none;
+  &:active {
+    opacity: $opacity--faded;
+  }
+}
+summary::-webkit-details-marker {
+  display: none;
 }
 
 // grid
@@ -131,9 +154,12 @@ h1 {
   @media (max-width: $bp-xs-sm) {
     display: block;
     &:not(:last-of-type):after {
-      content: '\2003'
+      content: ''
     }
   }
+}
+.nav__link--active {
+  @extend u;
 }
 
 .logo-previews {
@@ -151,9 +177,22 @@ h1 {
     width: 1/2*100%;
   }
 }
+.tag-items {
+  @include column-count(5);
+  @include column-gap($gutter);
+  @media (max-width: $bp-md-lg) {
+    @include column-count(4);
+  }
+  @media (max-width: $bp-sm-md) {
+    @include column-count(3);
+  }
+  @media (max-width: $bp-xs-sm) {
+    @include column-count(2);
+  }
+}
 .logo-preview__thumb-outer,
 .post__logo-outer {
-  padding: $gutter/2; // TEMP
+  padding: $gutter/2;
 }
 .logo-preview__thumb,
 .post__logo {
@@ -179,9 +218,15 @@ h1 {
 .post__logo-outer {
   max-width: 54rem;
 }
-.tag__item {
+.post__tag {
   display: inline;
   &:not(:last-of-type):after {
     content: ', ';
   }
+}
+.filter__summary {
+  cursor: pointer;
+}
+.filter__details[open] {
+  margin-bottom: $v;
 }
