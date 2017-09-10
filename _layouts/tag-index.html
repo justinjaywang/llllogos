@@ -2,32 +2,6 @@
 layout: default
 ---
 
-{% if page.url == '/tags/' %}
-  <u>Tags</u>
-  <ul class="tag-items">
-    {% for tag in site.post_tags %}
-      <li class="tag-item"><a href="{{ tag.url }}">{{ tag.title }}</a></li>
-    {% endfor %}
-  </ul>
-{% elsif page.url == '/designers/' %}
-  <u>Designers</u>
-  <ul class="tag-items">
-    {% for designer in site.designers %}
-      <li class="tag-item"><a href="{{ designer.url }}">{{ designer.title }}</a></li>
-    {% endfor %}
-  </ul>
-{% elsif page.url == '/countries/' %}
-  <u>Countries</u>
-  <ul class="tag-items">
-    {% for country in site.countries %}
-      <li class="tag-item"><a href="{{ country.url }}">{{ country.title }}</a></li>
-    {% endfor %}
-  </ul>
-{% elsif page.url == '/years/' %}
-  <u>Years</u>
-  <ul class="tag-items">
-    {% for year in site.years %}
-      <li class="tag-item"><a href="{{ year.url }}">{{ year.title }}</a></li>
-    {% endfor %}
-  </ul>
-{% endif %}
+<u>{{ page.title }}</u>
+{% assign type = page.title | downcase %}
+{% include tag-items.html type=type %}

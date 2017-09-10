@@ -1,0 +1,33 @@
+{% case include.type %}
+  {% when 'designers' %}
+    {% capture tags %}
+      {% for designer in site.designers %}
+        {% assign filtered_posts = site.posts | where_exp: 'post', 'post.designer == designer.title' %}
+        <li data-sort="{{ site.posts.size | minus: filtered_posts.size | prepend: '0000' | slice: -4, 4 }}" class="tag-item"><a href="/designers/{{ designer.title | slugify: 'pretty' }}/">{{ designer.title }} ({{ filtered_posts.size }})</a></li>
+      {% endfor %}
+    {% endcapture %}
+  {% when 'countries' %}
+    {% capture tags %}
+      {% for country in site.countries %}
+        {% assign filtered_posts = site.posts | where_exp: 'post', 'post.country == country.title' %}
+        <li data-sort="{{ site.posts.size | minus: filtered_posts.size | prepend: '0000' | slice: -4, 4 }}" class="tag-item"><a href="/countries/{{ country.title | slugify: 'pretty' }}/">{{ country.title }} ({{ filtered_posts.size }})</a></li>
+      {% endfor %}
+    {% endcapture %}
+  {% when 'years' %}
+    {% capture tags %}
+      {% for year in site.years %}
+        {% assign filtered_posts = site.posts | where_exp: 'post', 'post.year == year.title' %}
+        <li data-sort="{{ site.posts.size | minus: filtered_posts.size | prepend: '0000' | slice: -4, 4 }}" class="tag-item"><a href="/years/{{ year.title | append: '' | slugify: 'pretty' }}/">{{ year.title }} ({{ filtered_posts.size }})</a></li>
+      {% endfor %}
+    {% endcapture %}
+  {% when 'tags' %}
+    {% capture tags %}
+      {% for tag in site.post_tags %}
+        {% assign filtered_posts = site.posts | where_exp: 'post', 'post.tags contains tag.title' %}
+        <li data-sort="{{ site.posts.size | minus: filtered_posts.size | prepend: '0000' | slice: -4, 4 }}" class="tag-item"><a href="/tags/{{ tag.title | slugify: 'pretty' }}/">{{ tag.title }} ({{ filtered_posts.size }})</a></li>
+      {% endfor %}
+    {% endcapture %}
+{% endcase %}
+<ul class="tag-items">
+  {{ tags | split:'</li>' | sort | join:'</li>' | normalize_whitespace | replace: '> <', '><' }}
+</ul>
