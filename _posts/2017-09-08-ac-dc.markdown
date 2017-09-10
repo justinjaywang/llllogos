@@ -6,7 +6,7 @@ country: USA
 year: 1977
 tags:
 - music
-- band
+- bands
 - blackletter
 image: "/uploads/ac-dc.svg"
 ---

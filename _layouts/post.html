@@ -12,6 +12,6 @@ layout: default
   </ul>
 </div>
 
-<div class="post__logo-wrap">
+<div class="post__logo-wrap{% if page.padded %} post__logo-wrap--padded{% endif %}">
   <div class="post__logo" style="background-image: url('{{ page.image }}')"></div>
 </div>

@@ -1,0 +1,11 @@
+---
+title: Canon
+date: 2017-09-10
+designer: 
+country: 
+year: 
+tags:
+- typographic
+image: "/uploads/canon.svg"
+---
+

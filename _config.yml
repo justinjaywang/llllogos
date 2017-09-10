@@ -39,6 +39,7 @@ defaults:
     country: 
     year: 
     tags: 
+    padded: true
 - scope:
     path: ''
     type: post_tags
