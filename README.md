@@ -28,4 +28,3 @@ JEKYLL_ENV=production jekyll build
 - Featured collections - make a sample one to figure out how it will work
 - write About page (cap width)
   - markdown ipsum styles
-- figure out selected nav item, hover link, and active link styles

@@ -80,7 +80,7 @@ summary:hover {
   @extend u;
 }
 details[open] > summary {
-  @extend u; // TO DO
+  @extend u;
 }
 summary {
   display: inline-block;
