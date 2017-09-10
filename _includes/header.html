@@ -1,10 +1,10 @@
 <header class="header container">
-  <nav class="nav row">
-    <div class="nav__title col">
+  <nav class="nav">
+    <div class="nav__title">
       <a href="/">{{ site.title }}</a>
     </div>
     {% capture nav__items %}
-      <ul class="nav__items col">
+      <ul class="nav__items">
         {% for item in site.nav.header %}
           <li class="nav__item"><a href="{{ item.link }}" class="nav__link {% if page.url == item.link %} nav__link--active{% endif %}">{{ item.text }}</a></li>
         {% endfor %}

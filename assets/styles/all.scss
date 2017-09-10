@@ -93,6 +93,101 @@ summary::-webkit-details-marker {
   display: none;
 }
 
+// body copy
+// ---------
+
+.bc {
+  a {
+    @extend u;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  h2 {
+    text-decoration: none;
+    @extend strong;
+  }
+  h3,
+  h4,
+  h5,
+  h6 {
+    @extend em;
+  }
+  p,
+  ul,
+  ol,
+  blockquote,
+  pre,
+  table,
+  img,
+  video,
+  iframe {
+    margin-bottom: $v;
+  }
+  img,
+  video,
+  iframe {
+    display: block;
+  }
+  blockquote {
+    @extend em;
+    em {
+      font-style: normal;
+    }
+  }
+  blockquote,
+  ul {
+    padding-left: 1em;
+  }
+  ol {
+    padding-left: 1.75em;
+    counter-reset: decimal-counter;
+  }
+  ol,
+  ul {
+    position: relative;
+  }
+  ol li:before,
+  ul li:before {
+    position: absolute;
+    left: 0;
+  }
+  ol li:before {
+    @include user-select(none);
+    content: counter(decimal-counter, decimal-leading-zero);
+    counter-increment: decimal-counter;
+  }
+  ul li:before {
+    content: '-';
+  }
+  table {
+    width: 100%;
+    text-align: left;
+    th {
+      @extend strong;
+    }
+    th,
+    td {
+      padding-right: 0.5em;
+      &:last-of-type {
+        padding-right: 0;
+      }
+    }
+    code {
+      white-space: normal;
+    }
+  }
+  hr {
+    margin-top: $v*1;
+    margin-bottom: $v*1;
+    border: 0;
+    height: $v;
+    &:after {
+      content: '* * *';
+    }
+  }
+}
+
 // grid
 // ----
 
@@ -132,31 +227,6 @@ summary::-webkit-details-marker {
 }
 .nav__title {
   margin-bottom: $v;
-}
-.nav__items {
-  text-align: right;
-  @media (max-width: $bp-xs-sm) {
-    text-align: left;
-  }
-}
-.nav__title.col,
-.nav__items.col {
-  width: 50%;
-  @media (max-width: $bp-xs-sm) {
-    width: 100%;
-  }
-}
-.nav__item {
-  display: inline;
-  &:not(:last-of-type):after {
-    content: '\2003';
-  }
-  @media (max-width: $bp-xs-sm) {
-    display: block;
-    &:not(:last-of-type):after {
-      content: ''
-    }
-  }
 }
 .nav__link--active {
   @extend u;
