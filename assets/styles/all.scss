@@ -136,12 +136,9 @@ summary::-webkit-details-marker {
     }
   }
   blockquote,
-  ul {
-    padding-left: 1em;
-  }
+  ul,
   ol {
-    padding-left: 1.75em;
-    counter-reset: decimal-counter;
+    padding-left: 1em;
   }
   ol,
   ul {
@@ -151,13 +148,6 @@ summary::-webkit-details-marker {
   ul li:before {
     position: absolute;
     left: 0;
-  }
-  ol li:before {
-    @include user-select(none);
-    content: counter(decimal-counter, decimal-leading-zero);
-    counter-increment: decimal-counter;
-  }
-  ul li:before {
     content: '-';
   }
   table {
