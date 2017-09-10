@@ -212,7 +212,6 @@ summary::-webkit-details-marker {
   margin-top: $outer-gutter;
 }
 .main {
-  margin-top: $v;
   margin-bottom: $outer-gutter;
 }
 .nav__title {
@@ -221,7 +220,9 @@ summary::-webkit-details-marker {
 .nav__link--active {
   @extend u;
 }
-
+.nav__items {
+  margin-bottom: $v;
+}
 .logo-previews {
   margin-top: $v*6;
 }
@@ -250,8 +251,8 @@ summary::-webkit-details-marker {
     @include column-count(2);
   }
 }
-.logo-preview__thumb-outer,
-.post__logo-outer {
+.logo-preview__thumb-wrap,
+.post__logo-wrap {
   padding: $gutter/2;
 }
 .logo-preview__thumb,
@@ -275,8 +276,8 @@ summary::-webkit-details-marker {
 .post__meta {
   margin-bottom: $v;
 }
-.post__logo-outer {
-  max-width: 54rem;
+.post__logo-wrap {
+  max-width: $max-width--narrow;
 }
 .post__tag {
   display: inline;

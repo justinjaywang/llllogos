@@ -16,6 +16,7 @@ $v: $line-height--normal * 1rem;
 // ----
 
 $max-width--container: 1440px;
+$max-width--narrow:    54rem;
 
 // xs | sm | md | lg
 $bp-xs-sm: 36rem;
@@ -28,4 +29,4 @@ $outer-gutter: $gutter*1;
 // miscellaneous
 // -------------
 
-$opacity--faded: 0.666667;
+$opacity--faded:   0.666667;
