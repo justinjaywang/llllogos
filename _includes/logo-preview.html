@@ -1,6 +1,5 @@
 <a href="{{ post.url }}" class="logo-preview col">
-  <div class="logo-preview__thumb-wrap{% if post.padded %} logo-preview__thumb-wrap--padded{% endif %}">
+  <div class="logo-preview__thumb-wrap logo-preview__thumb-wrap--pad{{ post.pad }}">
     <div class="logo-preview__thumb" style="background-image: url('{{ post.image }}')"></div>
   </div>
-  {{ post.title }}
 </a>

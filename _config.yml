@@ -4,72 +4,60 @@ url: http://llllogos.com
 description: Online archive of logos, curated by Justin Jay Wang.
 collections:
   posts:
-    title: Posts
+    title: Featured
     output: true
   uploads:
     title: Uploads
     output: true
-  post_tags:
-    title: Post Tags
-    output: true
-  designers:
-    title: Designers
-    output: true
-  countries:
-    title: Countries
-    output: true
-  years:
-    title: Years
-    output: true
-  featured:
-    title: Featured
+  logos:
+    title: Logos
     output: true
 defaults:
 - scope:
     path: ''
   values:
-    layout: post
+    layout: featured
 - scope:
     path: ''
     type: posts
   values:
-    permalink: "/:title/"
-    layout: post
+    permalink: '/featured/:title/'
+    layout: featured
+- scope:
+    path: ''
+    type: logos
+  values:
+    permalink: '/:title/'
+    layout: logo
     designer: 
     country: 
     year: 
     tags: 
-    padded: true
-- scope:
-    path: ''
-    type: post_tags
-  values:
-    permalink: "/tags/:title/"
-    layout: tag
-- scope:
-    path: ''
-    type: designers
-  values:
-    permalink: "/designers/:title/"
-    layout: tag
-- scope:
-    path: ''
-    type: countries
-  values:
-    permalink: "/countries/:title/"
-    layout: tag
-- scope:
-    path: ''
-    type: years
-  values:
-    permalink: "/years/:title/"
-    layout: tag
-- scope:
-    path: ''
-    type: featured
-  values:
-    permalink: "/featured/:title/"
-    layout: featured
+    pad: 1
+autopages:
+  enabled: true
+  tags:
+    enabled: true
+    layouts:
+      - autopage_tags.html
+      - autopage_tags-reverse.html
+    title: ':tag'
+  categories:
+    enabled: false
+  collections:
+    enabled: false
+pagination:
+  enabled: true
+  per_page: 120
+  permalink: '/:num/'
+  title: ''
+  limit: 0
+  sort_field: 'title'
+  sort_reverse: false
+  collection: logos
+  trail: 
+    before: 999
+    after: 999
 permalink: pretty
 exclude:
 - Gemfile
@@ -77,12 +65,10 @@ exclude:
 - README*
 - '.gitignore'
 gems:
-- jekyll-sitemap
+- jekyll-paginate-v2
 - jekyll-redirect-from
 - jekyll-seo-tag
-- jekyll-paginate
-paginate: 72
-paginate_path: "/page/:num/"
+- jekyll-sitemap
 twitter:
   username: llllogos
 logo: 
@@ -97,7 +83,7 @@ sass:
   style: compressed
 repository: justinjaywang/llllogos
 google_analytics: 
-date_format: "%B %-d, %Y"
+date_format: '%B %-d, %Y'
 nav:
   header:
   - text: Directory

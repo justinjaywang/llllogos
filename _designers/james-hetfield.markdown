@@ -1,4 +1,0 @@
----
-title: James Hetfield
----
-

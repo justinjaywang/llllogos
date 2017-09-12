@@ -1,0 +1,15 @@
+---
+layout: index
+autopages:
+  permalink: "/tags/:tag/reverse/"
+pagination: 
+  enabled: true
+  sort_field: 'title'
+  sort_reverse: true
+---
+
+<h1>autopage_tags.html layout</h1>
+
+{% for post in paginator.posts %}
+  {{ post.title }}
+{% endfor %}

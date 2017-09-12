@@ -25,7 +25,7 @@ body {
   line-height: $line-height--normal;
   background-color: #fff;
   color: #000;
-  letter-spacing: 0.005em;
+  letter-spacing: $letter-spacing--body;
 }
 @include selection(#000, #fff);
 img,
@@ -210,6 +210,7 @@ summary::-webkit-details-marker {
 
 .header {
   margin-top: $outer-gutter;
+  margin-bottom: $v*2;
 }
 .main {
   margin-bottom: $outer-gutter;
@@ -223,14 +224,11 @@ summary::-webkit-details-marker {
 .nav__items {
   margin-bottom: $v;
 }
-.logo-previews {
-  margin-top: $v*6;
-}
-.logo-preview {
-  margin-bottom: $v*3;
-}
 .logo-preview.col {
-  width: 1/5*100%;
+  width: 1/6*100%;
+  @media (max-width: $bp-lg-xl) {
+    width: 1/5*100%;
+  }
   @media (max-width: $bp-md-lg) {
     width: 1/4*100%;
   }
@@ -242,8 +240,11 @@ summary::-webkit-details-marker {
   }
 }
 .tag-items {
-  @include column-count(5);
+  @include column-count(6);
   @include column-gap($gutter);
+  @media (max-width: $bp-lg-xl) {
+    @include column-count(5);
+  }
   @media (max-width: $bp-md-lg) {
     @include column-count(4);
   }
@@ -257,9 +258,21 @@ summary::-webkit-details-marker {
 .logo-preview__thumb-wrap,
 .post__logo-wrap {
 }
-.logo-preview__thumb-wrap--padded,
-.post__logo-wrap--padded {
-  padding: $gutter;
+.logo-preview__thumb-wrap--pad0,
+.post__logo-wrap--pad0 {
+  padding: 0;
+}
+.logo-preview__thumb-wrap--pad1,
+.post__logo-wrap--pad1 {
+  padding: $gutter*0.5;
+}
+.logo-preview__thumb-wrap--pad2,
+.post__logo-wrap--pad2 {
+  padding: $gutter*1;
+}
+.logo-preview__thumb-wrap--pad3,
+.post__logo-wrap--pad3 {
+  padding: $gutter*1.5;
 }
 .logo-preview__thumb,
 .post__logo {
