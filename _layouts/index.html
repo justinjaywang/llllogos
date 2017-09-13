@@ -2,66 +2,53 @@
 layout: default
 ---
 
-{% comment %}
-<ul>
-  <li class="filter">
-    <details class="filter__details">
-      <summary class="filter__summary"><h2>Designers</h2></summary>
-      {% include tag-items.html type='designers' %}
-    </details>
-  </li>
-  <li class="filter">
-    <details class="filter__details">
-      <summary class="filter__summary"><h2>Countries</h2></summary>
-      {% include tag-items.html type='countries' %}
-    </details>
-  </li>
-  <li class="filter">
-    <details class="filter__details">
-      <summary class="filter__summary"><h2>Years</h2></summary>
-      {% include tag-items.html type='years' %}
-    </details>
-  </li>
-  <li class="filter">
-    <details class="filter__details">
-      <summary class="filter__summary"><h2>Tags</h2></summary>
-      {% include tag-items.html type='tags' %}
-    </details>
-  </li>
-</ul>
-{% endcomment %}
+<main class="main container">
+  {% if page.layout == 'autopage_filters' %}
+    <header>
+      Filter: {{ page.title }}
+      <a href="/">view all</a>
+    </header>
+  {% else %}
+    <header class="filter">
+      <details class="filter__details">
+        <summary class="filter__summary">Filters</summary>
+        {% include filters.html %}
+      </details>
+    </header>
+  {% endif %}
 
-<div class="logo-previews row">
-  {% for post in paginator.posts %}
-    {% include logo-preview.html %}
-  {% endfor %}
-</div>
+  <div class="logo-previews row">
+    {% for post in paginator.posts %}
+      {% include logo-preview.html %}
+    {% endfor %}
+  </div>
 
-{% unless paginator.total_pages == 1 %}
-  <footer class="pagination">
-    {% capture pagination %}
-      <ul class="pagination__items">
-        {% if paginator.previous_page %}
-          <li class="pagination__item"><a href="{{ paginator.previous_page_path }}">Previous</a></li>
-        {% endif %}
+  {% unless paginator.total_pages == 1 %}
+    <footer class="pagination">
+      {% capture pagination %}
+        <ul class="pagination__items">
+          {% if paginator.previous_page %}
+            <li class="pagination__item"><a href="{{ paginator.previous_page_path }}">Previous</a></li>
+          {% endif %}
 
-        {% if paginator.page_trail %}
-          {% for trail in paginator.page_trail %}
-            <li class="pagination__item pagination__item--num">
-              {% assign page_url = page.url | replace: 'index.html', '' %}
-              {% if page_url == trail.path %}
-                <u>{{ trail.num }}</u>
-              {% else %}
-                <a href="{{ trail.path | prepend: site.baseurl | replace: '//', '/' }}" title="{{trail.title}}">{{ trail.num }}</a>
-              {% endif %}
-            </li>
-          {% endfor %}
-        {% endif %}
+          {% if paginator.page_trail %}
+            {% for trail in paginator.page_trail %}
+              <li class="pagination__item pagination__item--num">
+                {% assign page_url = page.url | replace: 'index.html', '' %}
+                {% if page_url == trail.path %}
+                  <u>{{ trail.num }}</u>
+                {% else %}
+                  <a href="{{ trail.path | prepend: site.baseurl | replace: '//', '/' }}" title="{{trail.title}}">{{ trail.num }}</a>
+                {% endif %}
+              </li>
+            {% endfor %}
+          {% endif %}
 
-        {% if paginator.next_page %}
-          <li class="pagination__item"><a href="{{ paginator.next_page_path }}">Next</a></li>
-        {% endif %}
-      </ul>
-    {% endcapture %}{{ pagination |  normalize_whitespace | replace: '> <', '><' }}
-  </footer>  
-{% endunless %}
+          {% if paginator.next_page %}
+            <li class="pagination__item"><a href="{{ paginator.next_page_path }}">Next</a></li>
+          {% endif %}
+        </ul>
+      {% endcapture %}{{ pagination |  normalize_whitespace | replace: '> <', '><' }}
+    </footer>  
+  {% endunless %}
+</main>

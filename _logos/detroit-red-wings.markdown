@@ -1,8 +1,5 @@
 ---
 title: Detroit Red Wings
-designer: 
-country: 
-year: 
 tags:
 - sports
 - hockey

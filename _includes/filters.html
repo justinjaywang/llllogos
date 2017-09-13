@@ -1,0 +1,19 @@
+{% assign tag_arrays = site.logos | map: "tags" | uniq %}
+{% assign tags = '' | split: '' %}{% comment %} initialize array {% endcomment %}
+{% for tag_array in tag_arrays %}
+  {% for tag in tag_array %}
+    {% assign tags = tags | push: tag %}
+  {% endfor %}
+{% endfor %}
+{% assign tags = tags | uniq %}
+
+{% capture filters %}
+  {% for tag in tags %}
+    {% assign tagged_logos = site.logos | where_exp: 'logo', 'logo.tags contains tag' %}
+    <li data-sort="{{ site.logos.size | minus: tagged_logos.size | prepend: '0000' | slice: -4, 4 }}" class="filter"><a href="/filters/{{ tag | slugify: 'pretty' }}/">{{ tag }} ({{ tagged_logos.size }})</a></li>
+  {% endfor %}
+{% endcapture %}
+
+<ul class="filters">
+  {{ filters | split:'</li>' | sort | join:'</li>' | normalize_whitespace | replace: '> <', '><' }}
+</ul>

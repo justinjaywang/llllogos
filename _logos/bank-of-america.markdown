@@ -1,11 +1,8 @@
 ---
 title: Bank of America
-designer: 
-country: 
-year: 
 tags:
-- apparel
-- skate
+- monogrammatic
+- bank
 image: "/uploads/bank-of-america.svg"
 pad: 3
 ---

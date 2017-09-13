@@ -1,12 +1,11 @@
 ---
 title: AC/DC
-designer: Gerard Huerta
-country: USA
-year: 1977
 tags:
 - music
 - bands
 - blackletter
+- Gerard Huerta
+- '1977'
 - USA
 image: "/uploads/ac-dc.svg"
 ---

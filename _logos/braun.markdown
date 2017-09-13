@@ -1,8 +1,5 @@
 ---
 title: Braun
-designer: 
-country: 
-year: 
 tags:
 - music
 - bands

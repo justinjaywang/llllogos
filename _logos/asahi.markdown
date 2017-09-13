@@ -1,11 +1,8 @@
 ---
 title: Asahi
-designer: 
-country: 
-year: 
 tags:
-- music
-- bands
+- Japan
+- beer
 image: "/uploads/asahi.svg"
 ---
 

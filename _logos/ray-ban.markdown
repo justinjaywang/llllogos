@@ -1,8 +1,5 @@
 ---
 title: Ray-Ban
-designer: 
-country: 
-year: 
 tags:
 - music
 - bands

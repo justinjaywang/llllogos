@@ -239,7 +239,7 @@ summary::-webkit-details-marker {
     width: 1/2*100%;
   }
 }
-.tag-items {
+.filters {
   @include column-count(6);
   @include column-gap($gutter);
   @media (max-width: $bp-lg-xl) {

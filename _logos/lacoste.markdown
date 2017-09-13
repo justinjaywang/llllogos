@@ -1,8 +1,5 @@
 ---
 title: Lacoste
-designer: 
-country: 
-year: 
 tags:
 - music
 - bands

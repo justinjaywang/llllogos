@@ -39,8 +39,7 @@ autopages:
   tags:
     enabled: true
     layouts:
-      - autopage_tags.html
-      - autopage_tags-reverse.html
+      - autopage_filters.html
     title: ':tag'
   categories:
     enabled: false

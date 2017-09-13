@@ -2,16 +2,18 @@
 layout: default
 ---
 
-<div class="post__meta">
-  <h1>{{ page.title }}</h1>
-  {% if page.designer %}<a href="/designers/{{ page.designer | slugify: 'pretty' }}/">{{ page.designer }}</a>{% endif %}{% if page.country %} (<a href="/countries/{{ page.country | slugify: 'pretty' }}/">{{ page.country }}</a>){% endif %}{% if page.year %}, <a href="/years/{{ page.year }}/">{{ page.year }}</a>{% endif %}
-  <ul class="post__tags">
-    {% for tag in page.tags %}
-      <li class="post__tag"><a href="/tags/{{ tag | slugify: 'pretty' }}/">{{ tag }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<main class="main container">
+  <header class="post__meta">
+    <h1>{{ page.title }}</h1>
+    {% if page.designer %}<a href="/designers/{{ page.designer | slugify: 'pretty' }}/">{{ page.designer }}</a>{% endif %}{% if page.country %} (<a href="/countries/{{ page.country | slugify: 'pretty' }}/">{{ page.country }}</a>){% endif %}{% if page.year %}, <a href="/years/{{ page.year }}/">{{ page.year }}</a>{% endif %}
+    <ul class="post__tags">
+      {% for filter in page.tags %}
+        <li class="post__tag"><a href="/filters/{{ filter | slugify: 'pretty' }}/">{{ filter }}</a></li>
+      {% endfor %}
+    </ul>
+  </header>
 
-<div class="post__logo-wrap post__logo-wrap--pad{{ page.pad }}">
-  <div class="post__logo" style="background-image: url('{{ page.image }}')"></div>
-</div>
+  <div class="post__logo-wrap post__logo-wrap--pad{{ page.pad }}">
+    <div class="post__logo" style="background-image: url('{{ page.image }}')"></div>
+  </div>
+</main>

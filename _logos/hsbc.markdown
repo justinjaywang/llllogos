@@ -1,8 +1,5 @@
 ---
 title: HSBC
-designer: 
-country: 
-year: 
 tags:
 - apparel
 - skate

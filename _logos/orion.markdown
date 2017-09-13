@@ -1,8 +1,5 @@
 ---
 title: Orion
-designer: 
-country: 
-year: 
 tags:
 - music
 - bands

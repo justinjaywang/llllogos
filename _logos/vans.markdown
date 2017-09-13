@@ -1,8 +1,5 @@
 ---
 title: Vans
-designer: 
-country: 
-year: 
 tags:
 - apparel
 - skate
