@@ -10,10 +10,10 @@ layout: default
     </header>
   {% else %}
     <header class="filter">
-      <details class="filter__details">
+      <details class="filter__details"{% if page.pagination_info.curr_page == 1 %} open{% endif %}>
         <summary class="filter__summary">Filters</summary>
         {% include filters.html truncate=true %}
-        <a href="/filters/">View all</a>
+        <a href="/filters/">view all</a>
       </details>
     </header>
   {% endif %}
