@@ -224,7 +224,12 @@ summary::-webkit-details-marker {
 .nav__items {
   margin-bottom: $v;
 }
-.logo-preview.col {
+.logo-previews {
+  margin-top: $v*3;
+  margin-bottom: $v*3;
+}
+.logo-preview.col,
+.logo__meta {
   width: 1/6*100%;
   @media (max-width: $bp-lg-xl) {
     width: 1/5*100%;
@@ -255,27 +260,27 @@ summary::-webkit-details-marker {
     @include column-count(2);
   }
 }
-.logo-preview__thumb-wrap,
-.post__logo-wrap {
+.logo-preview__figure-wrap,
+.logo__figure-wrap {
 }
-.logo-preview__thumb-wrap--pad0,
-.post__logo-wrap--pad0 {
+.logo-preview__figure-wrap--pad0,
+.logo__figure-wrap--pad0 {
   padding: 0;
 }
-.logo-preview__thumb-wrap--pad1,
-.post__logo-wrap--pad1 {
+.logo-preview__figure-wrap--pad1,
+.logo__figure-wrap--pad1 {
   padding: $gutter*0.5;
 }
-.logo-preview__thumb-wrap--pad2,
-.post__logo-wrap--pad2 {
+.logo-preview__figure-wrap--pad2,
+.logo__figure-wrap--pad2 {
   padding: $gutter*1;
 }
-.logo-preview__thumb-wrap--pad3,
-.post__logo-wrap--pad3 {
+.logo-preview__figure-wrap--pad3,
+.logo__figure-wrap--pad3 {
   padding: $gutter*1.5;
 }
-.logo-preview__thumb,
-.post__logo {
+.logo-preview__figure,
+.logo__figure {
   padding-top: 100%; // 1×1 aspect ratio default
   margin-bottom: $v;
   background-size: contain;
@@ -292,13 +297,13 @@ summary::-webkit-details-marker {
     content: ' ';
   }
 }
-.post__meta {
+.logo__meta {
   margin-bottom: $v;
 }
-.post__logo-wrap {
+.logo__figure-wrap {
   max-width: $max-width--narrow;
 }
-.post__tag {
+.logo__filter {
   display: inline;
   &:not(:last-of-type):after {
     content: ', ';
@@ -309,4 +314,7 @@ summary::-webkit-details-marker {
 }
 .filter__details[open] {
   margin-bottom: $v;
+}
+.filter-label {
+  display: inline;
 }

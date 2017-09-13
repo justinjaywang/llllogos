@@ -40,7 +40,7 @@ autopages:
     enabled: true
     layouts:
       - autopage_filters.html
-    title: ':tag'
+    title: ''
   categories:
     enabled: false
   collections:

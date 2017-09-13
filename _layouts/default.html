@@ -10,7 +10,7 @@
       <meta property="og:image:width" content="240" />
       <meta property="og:image:height" content="240" />
     {% endunless %}
-    <title>{{ page.title | default: site.title }}{% if page.layout != 'index' %} — {{ site.title }}{% endif %}</title>
+    <title>{% if page.layout != 'index' %}{% if page.layout == 'autopage_filters' %}{{ page.autopages.display_name }}{% else %}{{ page.title }}{% endif %} — {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
     <link rel="stylesheet" href="/assets/styles/all.css" />
     <link rel="icon" href="/favicon.ico" />

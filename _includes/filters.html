@@ -14,6 +14,19 @@
   {% endfor %}
 {% endcapture %}
 
+{% capture popular_filters %}
+  {% for tag in tags %}
+    {% assign tagged_logos = site.logos | where_exp: 'logo', 'logo.tags contains tag' %}
+    {% if tagged_logos.size > 1 %}
+      <li data-sort="{{ site.logos.size | minus: tagged_logos.size | prepend: '0000' | slice: -4, 4 }}" class="filter"><a href="/filters/{{ tag | slugify: 'pretty' }}/">{{ tag }} ({{ tagged_logos.size }})</a></li>
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+
 <ul class="filters">
-  {{ filters | split:'</li>' | sort | join:'</li>' | normalize_whitespace | replace: '> <', '><' }}
+  {% if include.truncate %}
+    {{ popular_filters | split:'</li>' | sort | join:'</li>' | normalize_whitespace | replace: '> <', '><' }}
+  {% else %}
+    {{ filters | split:'</li>' | sort | join:'</li>' | normalize_whitespace | replace: '> <', '><' }}
+  {% endif %}
 </ul>

@@ -5,14 +5,15 @@ layout: default
 <main class="main container">
   {% if page.layout == 'autopage_filters' %}
     <header>
-      Filter: {{ page.title }}
+      <h1 class="filter-label">{{ page.autopages.display_name }}</h1>
       <a href="/">view all</a>
     </header>
   {% else %}
     <header class="filter">
       <details class="filter__details">
         <summary class="filter__summary">Filters</summary>
-        {% include filters.html %}
+        {% include filters.html truncate=true %}
+        <a href="/filters/">View all</a>
       </details>
     </header>
   {% endif %}
