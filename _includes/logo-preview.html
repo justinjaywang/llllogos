@@ -1,5 +1,6 @@
-<a href="{{ post.url }}" class="logo-preview col">
-  <div class="logo-preview__figure-wrap logo-preview__figure-wrap--pad{{ post.pad }}">
-    <figure class="logo-preview__figure" style="background-image: url('{{ post.image }}')"></figure>
+
+<a href="{{ logo.url }}" class="logo-preview col">
+  <div class="logo-preview__figure-wrap logo-preview__figure-wrap--pad{{ logo.pad }}">
+    <figure class="logo-preview__figure" style="background-image: url('{{ site.image_path }}{{ include.logo.title | slugify: 'pretty' }}.svg')"></figure>
   </div>
 </a>

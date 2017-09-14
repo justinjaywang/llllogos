@@ -7,6 +7,5 @@ tags:
 - Gerard Huerta
 - '1977'
 - USA
-image: "/uploads/ac-dc.svg"
 ---
 

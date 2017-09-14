@@ -91,3 +91,4 @@ nav:
     link: /featured/
   - text: About
     link: /about/
+image_path: '/uploads/'

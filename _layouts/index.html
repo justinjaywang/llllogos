@@ -19,8 +19,8 @@ layout: default
   {% endif %}
 
   <div class="logo-previews row">
-    {% for post in paginator.posts %}
-      {% include logo-preview.html %}
+    {% for logo in paginator.posts %}
+      {% include logo-preview.html logo=logo %}
     {% endfor %}
   </div>
 
