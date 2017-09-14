@@ -10,7 +10,7 @@
 {% capture filters %}
   {% for tag in tags %}
     {% assign tagged_logos = site.logos | where_exp: 'logo', 'logo.tags contains tag' %}
-    <li data-sort="{{ site.logos.size | minus: tagged_logos.size | prepend: '0000' | slice: -4, 4 }}" class="filter"><a href="/filters/{{ tag | slugify: 'pretty' }}/">{{ tag }} ({{ tagged_logos.size }})</a></li>
+    <li data-sort="{{ site.logos.size | minus: tagged_logos.size | prepend: '0000' | slice: -4, 4 }}" class="filter"><a href="/filters/{{ tag | slugify }}/">{{ tag }} ({{ tagged_logos.size }})</a></li>
   {% endfor %}
 {% endcapture %}
 

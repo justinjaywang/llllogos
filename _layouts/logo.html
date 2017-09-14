@@ -5,10 +5,9 @@ layout: default
 <main class="main container logo">
   <header class="logo__meta">
     <h1>{{ page.title }}</h1>
-    {% if page.designer %}<a href="/designers/{{ page.designer | slugify: 'pretty' }}/">{{ page.designer }}</a>{% endif %}{% if page.country %} (<a href="/countries/{{ page.country | slugify: 'pretty' }}/">{{ page.country }}</a>){% endif %}{% if page.year %}, <a href="/years/{{ page.year }}/">{{ page.year }}</a>{% endif %}
     <ul class="logo__filters">
       {% for filter in page.tags %}
-        <li class="logo__filter"><a href="/filters/{{ filter | slugify: 'pretty' }}/">{{ filter }}</a></li>
+        <li class="logo__filter"><a href="/filters/{{ filter | slugify }}/">{{ filter }}</a></li>
       {% endfor %}
     </ul>
   </header>

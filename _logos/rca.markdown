@@ -1,7 +1,7 @@
 ---
 title: RCA
 tags:
-- music
-- bands
+- typographic
+- electronics
 ---
 

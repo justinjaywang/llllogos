@@ -1,7 +1,9 @@
 ---
 title: Lacoste
 tags:
-- music
-- bands
+- symbolic
+- apparel
+- animal
+- crocodile
 ---
 

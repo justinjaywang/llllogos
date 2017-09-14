@@ -1,7 +1,7 @@
 ---
 title: Asahi
 tags:
-- Japan
+- beverage
 - beer
 ---
 

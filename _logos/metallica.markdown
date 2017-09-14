@@ -1,9 +1,9 @@
 ---
-title: AC/DC
+title: Metallica
 tags:
 - music
 - band
 - typographic
-- blackletter
+pad: 0
 ---
 

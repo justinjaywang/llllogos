@@ -1,8 +1,9 @@
 ---
 title: HSBC
 tags:
-- apparel
-- skate
+- symbolic
+- geometric
+- bank
 pad: 0
 ---
 

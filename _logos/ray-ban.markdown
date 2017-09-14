@@ -1,8 +1,10 @@
 ---
 title: Ray-Ban
 tags:
-- music
-- bands
+- typographic
+- script
+- apparel
+- eyewear
 pad: 0
 ---
 
