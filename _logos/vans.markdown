@@ -4,5 +4,6 @@ tags:
 - typographic
 - apparel
 - skate
+- footwear
 ---
 

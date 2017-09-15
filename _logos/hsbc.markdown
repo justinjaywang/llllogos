@@ -2,8 +2,8 @@
 title: HSBC
 tags:
 - symbolic
+- banks
 - geometric
-- bank
 pad: 0
 ---
 

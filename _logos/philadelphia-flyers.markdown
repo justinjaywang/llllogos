@@ -5,6 +5,5 @@ tags:
 - sports
 - hockey
 - wings
-pad: 2
 ---
 

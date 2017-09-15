@@ -1,9 +1,8 @@
 ---
-title: Metallica
+title: Pioneer
 tags:
-- music
-- band
 - typographic
+- electronics
 pad: 0
 ---
 

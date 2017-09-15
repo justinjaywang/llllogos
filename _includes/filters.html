@@ -16,7 +16,7 @@
 
 {% assign filters_array = filters | split:'</li>' | sort %}
 {% assign truncated_filters_array = '' | split: '' %}
-{% for item in filters_array | limit:11 %}
+{% for item in filters_array | limit:26 %}
   {% assign truncated_filters_array = truncated_filters_array | push: item %}
 {% endfor %}
 
