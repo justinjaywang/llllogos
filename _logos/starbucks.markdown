@@ -1,10 +1,10 @@
 ---
 title: Starbucks
 tags:
+- coffehouses
+- beverages
 - symbolic
 - circular
-- coffeehouse
-- coffee
 pad: 2
 ---
 

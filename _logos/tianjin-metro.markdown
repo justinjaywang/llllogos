@@ -1,7 +1,8 @@
 ---
 title: Tianjin Metro
 tags:
-- symbolic
+- alphabetical
+- T
 - circular
 - transportation
 - metro

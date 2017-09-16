@@ -2,11 +2,11 @@
 title: Brooklyn Brewery
 tags:
 - alphabetical
-- b
+- B
 - script
 - circular
-- beverage
-- beer
+- beverages
+- brewing
 pad: 2
 ---
 

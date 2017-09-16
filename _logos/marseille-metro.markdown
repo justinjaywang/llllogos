@@ -2,7 +2,7 @@
 title: Marseille Metro
 tags:
 - alphabetical
-- m
+- M
 - transportation
 - metro
 ---

@@ -3,16 +3,27 @@ layout: default
 ---
 
 <main class="main container logo">
-  <header class="logo__meta">
-    <h1>{{ page.title }}</h1>
-    <ul class="logo__filters">
-      {% for filter in page.tags %}
-        <li class="logo__filter"><a href="/filters/{{ filter | slugify }}/">{{ filter }}</a></li>
-      {% endfor %}
-    </ul>
-  </header>
-
   <div class="logo__figure-wrap logo__figure-wrap--pad{{ page.pad }}">
     <figure class="logo__figure" style="background-image: url('{{ site.image_path }}{{ page.slug }}.svg')"></figure>
   </div>
+
+  <footer class="logo__meta">
+    <h1>{{ page.title }}</h1>
+    {% if page.tags.size > 0 %}
+      <ul class="logo__filters">
+        {% for filter in page.tags %}
+          {% if site.data.designers contains filter %}
+            <span class="logo__designer"><a href="/filters/{{ filter | slugify }}/">{{ filter }}</a></span>
+          {% elsif site.data.years contains filter %}
+            <span class="logo__year"><a href="/filters/{{ filter | slugify }}/">{{ filter }}</a></span>
+          {% else %}
+            <li class="logo__tag"><a href="/filters/{{ filter | slugify }}/">{{ filter }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if page.notes %}
+      <div class="logo__notes bc">Notes: {{ page.notes | markdownify }}</div>
+    {% endif %}
+  </footer>
 </main>

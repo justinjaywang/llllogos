@@ -1,7 +1,7 @@
 ---
 title: Asahi
 tags:
-- beverage
-- beer
+- beverages
+- brewing
 ---
 

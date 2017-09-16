@@ -1,9 +1,8 @@
 ---
 title: Pepsi-Cola
 tags:
+- beverages
 - typographic
 - script
-- beverage
-- soft drink
 ---
 

@@ -1,11 +1,10 @@
 ---
 title: Carlsberg
 tags:
+- beverages
+- brewing
 - typographic
 - script
-- beverage
-- beer
-- soft drink
 pad: 0
 ---
 

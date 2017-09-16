@@ -1,14 +1,15 @@
 ---
 title: Mitsubishi
 tags:
-- symbolic
-- radial
-- geometric
-- conglomerates
 - automotive
+- chemicals
 - electronics
 - oil
 - food
+- steel
+- symbolic
+- radial
+- geometric
 pad: 2
 ---
 

@@ -4,6 +4,6 @@ tags:
 - symbolic
 - cyclic
 - transportation
-- railway
+- rail
 ---
 

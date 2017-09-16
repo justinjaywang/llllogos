@@ -4,7 +4,7 @@ tags:
 - typographic
 - wings
 - manufacturing
-- tires
+- automotive
 pad: 0
 ---
 

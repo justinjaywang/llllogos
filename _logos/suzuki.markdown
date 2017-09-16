@@ -2,7 +2,7 @@
 title: Suzuki
 tags:
 - alphabetical
-- s
+- S
 - automotive
 pad: 2
 ---

@@ -5,15 +5,25 @@ layout: default
 <main class="main container">
   {% if page.layout == 'autopage_filters' %}
     <header>
-      <h1 class="filter-label">{{ page.autopages.display_name }}</h1>
+      Filter: <h1 class="filter-label">{{ page.autopages.display_name }}</h1>
       <a href="/">view all</a>
     </header>
   {% else %}
     <header class="filter">
-      <details class="filter__details"{% if page.pagination_info.curr_page == 1 %} open{% endif %}>
-        <summary class="filter__summary">Filters</summary>
-        {% include filters.html truncate=true %}
-        <a href="/filters/">view all</a>
+      <details class="filter__details">
+        <summary class="filter__summary">Categories</summary>
+        {% include categories.html truncate=true %}
+        <a href="/filters/#categories">view all</a>
+      </details>
+      <details class="filter__details">
+        <summary class="filter__summary">Designers</summary>
+        {% include designers.html truncate=true %}
+        <a href="/filters/#designers">view all</a>
+      </details>
+      <details class="filter__details">
+        <summary class="filter__summary">Tags</summary>
+        {% include tags.html truncate=true %}
+        <a href="/filters/#tags">view all</a>
       </details>
     </header>
   {% endif %}

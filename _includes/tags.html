@@ -20,7 +20,7 @@
   {% assign truncated_filters_array = truncated_filters_array | push: item %}
 {% endfor %}
 
-<ul class="filters">
+<ul class="filters filters--tag">
   {% if include.truncate %}
     {{ truncated_filters_array | join:'</li>' }}
   {% else %}

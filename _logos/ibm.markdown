@@ -1,9 +1,8 @@
 ---
 title: IBM
 tags:
+- technology
 - typographic
 - stripes
-- technology
-- computing
 ---
 

@@ -210,7 +210,7 @@ summary::-webkit-details-marker {
 
 .header {
   margin-top: $outer-gutter;
-  margin-bottom: $v*2;
+  margin-bottom: $v;
 }
 .main {
   margin-bottom: $outer-gutter;
@@ -225,8 +225,8 @@ summary::-webkit-details-marker {
   margin-bottom: $v;
 }
 .logo-previews {
-  margin-top: $v*3;
-  margin-bottom: $v*3;
+  margin-top: $v*4;
+  margin-bottom: $v*4;
 }
 .logo-preview.col,
 .logo__meta {
@@ -244,6 +244,9 @@ summary::-webkit-details-marker {
     width: 1/2*100%;
   }
 }
+.logo-preview {
+  margin-bottom: $gutter;
+}
 .filters {
   @include column-count(6);
   @include column-gap($gutter);
@@ -260,8 +263,9 @@ summary::-webkit-details-marker {
     @include column-count(2);
   }
 }
-.logo-preview__figure-wrap,
 .logo__figure-wrap {
+  margin-left: auto;
+  margin-right: auto;
 }
 .logo-preview__figure-wrap--pad0,
 .logo__figure-wrap--pad0 {
@@ -275,18 +279,16 @@ summary::-webkit-details-marker {
 .logo__figure-wrap--pad2 {
   padding: $gutter*1;
 }
-.logo-preview__figure-wrap--pad3,
-.logo__figure-wrap--pad2 {
-  padding: $gutter*1.5;
-}
 .logo-preview__figure,
 .logo__figure {
   padding-top: 100%; // 1×1 aspect ratio default
-  margin-bottom: $v;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
+}
+.logo__figure {
+  margin-bottom: $v;
 }
 .pagination {
   margin-top: $v;
@@ -297,21 +299,41 @@ summary::-webkit-details-marker {
     content: ' ';
   }
 }
-.logo__meta {
-  margin-bottom: $v;
-}
 .logo__figure-wrap {
   max-width: $max-width--narrow;
 }
-.logo__filter {
+.logo__designer {
+  &:before {
+    content: 'by ';
+  }
+}
+.logo__designer + .logo__year {
+  &:before {
+    content: ' in\00a0';
+  }
+}
+.logo__designer + .logo__tag,
+.logo__year + .logo__tag {
+  &:before {
+    content: ' / ';
+  }
+}
+.logo__tag {
   display: inline;
   &:not(:last-of-type):after {
     content: ', ';
   }
 }
+.logo__notes {
+  margin-top: $v;
+}
+.logo__notes p {
+  display: inline;
+}
 .filter__summary {
   cursor: pointer;
 }
+.filter-section,
 .filter__details[open] {
   margin-bottom: $v;
 }

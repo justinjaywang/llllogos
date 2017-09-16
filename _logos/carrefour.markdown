@@ -2,7 +2,7 @@
 title: Carrefour
 tags:
 - alphabetical
-- c
+- C
 - retail
 - inset
 ---

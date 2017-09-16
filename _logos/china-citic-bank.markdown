@@ -1,5 +1,5 @@
 ---
-title: Chian CTIC Bank
+title: China CTIC Bank
 tags:
 - monogrammatic
 - circular

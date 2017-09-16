@@ -3,6 +3,6 @@ title: Louis Vuitton
 tags:
 - monogrammatic
 - fashion
-pad: 3
+pad: 2
 ---
 

@@ -1,10 +1,10 @@
 ---
 title: British Steel
 tags:
-- monogrammatic
 - steel
+- monogrammatic
 - alphabetical
-- s
+- S
 pad: 2
 ---
 

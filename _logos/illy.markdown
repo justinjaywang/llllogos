@@ -1,9 +1,9 @@
 ---
 title: illy
 tags:
+- beverages
 - typographic
 - handwritten
-- coffee
 - inset
 - square
 pad: 2

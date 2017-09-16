@@ -2,6 +2,7 @@
 title: Mizuno
 tags:
 - typographic
+- graphic type
 - apparel
 - sportswear
 - footwear

@@ -2,7 +2,7 @@
 title: Montreal 1976 Summer Olympics
 tags:
 - alphabetical
-- m
+- M
 - olympics
 pad: 2
 ---

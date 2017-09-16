@@ -1,8 +1,8 @@
 ---
 title: Woolmark
 tags:
+- trademarks
 - symbolic
-- textile
 - radial
 pad: 2
 ---

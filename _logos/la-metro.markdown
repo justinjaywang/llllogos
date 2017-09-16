@@ -2,7 +2,7 @@
 title: Metro (Los Angeles)
 tags:
 - alphabetical
-- m
+- M
 - circular
 - transportation
 - metro

@@ -2,7 +2,7 @@
 title: Recife Metro
 tags:
 - alphabetical
-- m
+- M
 - transportation
 - metro
 pad: 2

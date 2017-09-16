@@ -29,10 +29,8 @@ defaults:
   values:
     permalink: '/:title/'
     layout: logo
-    designer: 
-    country: 
-    year: 
     tags: 
+    notes: 
     pad: 1
 autopages:
   enabled: true
@@ -47,7 +45,7 @@ autopages:
     enabled: false
 pagination:
   enabled: true
-  per_page: 120
+  per_page: 60
   permalink: '/:num/'
   title: ''
   limit: 0

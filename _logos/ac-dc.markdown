@@ -1,8 +1,10 @@
 ---
 title: AC/DC
 tags:
+- Gerard Huerta
+- '1977'
 - music
-- band
+- bands
 - typographic
 - blackletter
 - lightning

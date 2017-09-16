@@ -3,6 +3,6 @@ title: Amtrak
 tags:
 - symbolic
 - transportation
-- railway
+- rail
 ---
 

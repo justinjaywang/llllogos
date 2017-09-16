@@ -3,8 +3,8 @@ title: Corona
 tags:
 - typographic
 - blackletter
-- beverage
-- beer
+- beverages
+- brewing
 - crown
 pad: 0
 ---

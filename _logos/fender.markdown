@@ -1,9 +1,9 @@
 ---
 title: Fender
 tags:
+- music
+- musical instruments
 - typographic
 - script
-- musical instruments
-pad: 0
 ---
 

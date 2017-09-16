@@ -22,9 +22,15 @@ bundle exec jekyll serve --drafts
 JEKYLL_ENV=production jekyll build
 ```
 
+---
 ## TO DO
 
-- populate content
+- add link back to company/institution
+- Designer
+- Year
+- Origin
+- colorization
+
 - Featured collections - make a sample one to figure out how it will work
 - write About page (cap width)
   - markdown ipsum styles
@@ -34,3 +40,4 @@ JEKYLL_ENV=production jekyll build
 ### No SVG
 
 - Boylan Bottling Company
+- Cooper Union

@@ -4,7 +4,7 @@ tags:
 - typographic
 - script
 - geometric
-- beverage
-- beer
+- beverages
+- brewing
 ---
 

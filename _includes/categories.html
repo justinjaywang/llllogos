@@ -1,0 +1,25 @@
+{% assign categories = '' | split: '' %}{% comment %} initialize array {% endcomment %}
+{% for category in site.data.categories %}
+  {% assign categories = categories | push: category %}
+{% endfor %}
+
+{% capture filters %}
+  {% for category in categories %}
+    {% assign tagged_logos = site.logos | where_exp: 'logo', 'logo.tags contains category' %}
+    <li data-sort="{{ site.logos.size | minus: tagged_logos.size | prepend: '0000' | slice: -4, 4 }}" class="filter"><a href="/filters/{{ category | slugify }}/">{{ category }} ({{ tagged_logos.size }})</a></li>
+  {% endfor %}
+{% endcapture %}
+
+{% assign filters_array = filters | split:'</li>' | sort %}
+{% assign truncated_filters_array = '' | split: '' %}
+{% for item in filters_array | limit:26 %}
+  {% assign truncated_filters_array = truncated_filters_array | push: item %}
+{% endfor %}
+
+<ul class="filters filters--category">
+  {% if include.truncate %}
+    {{ truncated_filters_array | join:'</li>' }}
+  {% else %}
+    {{ filters_array | join:'</li>' }}
+  {% endif %}
+</ul>
