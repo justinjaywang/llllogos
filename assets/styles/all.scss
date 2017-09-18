@@ -307,6 +307,11 @@ summary::-webkit-details-marker {
     content: 'by ';
   }
 }
+.logo__designer + .logo__designer {
+  &:before {
+    content: 'at ';
+  }
+}
 .logo__designer + .logo__year {
   &:before {
     content: ' in\00a0';
@@ -326,9 +331,6 @@ summary::-webkit-details-marker {
 }
 .logo__notes {
   margin-top: $v;
-}
-.logo__notes p {
-  display: inline;
 }
 .filter__summary {
   cursor: pointer;

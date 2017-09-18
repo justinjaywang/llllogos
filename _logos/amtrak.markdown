@@ -1,8 +1,12 @@
 ---
 title: Amtrak
 tags:
-- symbolic
+- Lippincott
+- '1971'
+
 - transportation
 - rail
+
+- symbolic
 ---
 

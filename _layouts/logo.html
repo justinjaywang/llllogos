@@ -23,7 +23,7 @@ layout: default
       </ul>
     {% endif %}
     {% if page.notes %}
-      <div class="logo__notes bc">Notes: {{ page.notes | markdownify }}</div>
+      <div class="logo__notes bc">{{ page.notes | markdownify }}</div>
     {% endif %}
   </footer>
 </main>

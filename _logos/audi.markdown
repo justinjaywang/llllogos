@@ -1,8 +1,11 @@
 ---
 title: Audi
 tags:
-- symbolic
 - automotive
-pad: 0
+
+- typographic
+- sans-serif
+notes: |-
+  See also: [Audi logomark](/audi-2/)
 ---
 

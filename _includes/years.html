@@ -1,0 +1,25 @@
+{% assign years = '' | split: '' %}{% comment %} initialize array {% endcomment %}
+{% for year in site.data.years %}
+  {% assign years = years | push: year %}
+{% endfor %}
+
+{% capture filters %}
+  {% for year in years %}
+    {% assign tagged_logos = site.logos | where_exp: 'logo', 'logo.tags contains year' %}
+    <li data-sort="{{ site.logos.size | minus: tagged_logos.size | prepend: '0000' | slice: -4, 4 }}" class="filter"><a href="/filters/{{ year | slugify }}/">{{ year }} ({{ tagged_logos.size }})</a></li>
+  {% endfor %}
+{% endcapture %}
+
+{% assign filters_array = filters | split:'</li>' | sort %}
+{% assign truncated_filters_array = '' | split: '' %}
+{% for item in filters_array | limit:26 %}
+  {% assign truncated_filters_array = truncated_filters_array | push: item %}
+{% endfor %}
+
+<ul class="filters filters--year">
+  {% if include.truncate %}
+    {{ truncated_filters_array | join:'</li>' }}
+  {% else %}
+    {{ filters_array | join:'</li>' }}
+  {% endif %}
+</ul>

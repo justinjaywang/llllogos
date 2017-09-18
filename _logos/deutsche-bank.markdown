@@ -1,8 +1,12 @@
 ---
 title: Deutsche Bank
 tags:
-- symbolic
+- Anton Stankowski
+- '1972'
+
 - banks
+
+- symbolic
 - square
 pad: 2
 ---

@@ -1,10 +1,15 @@
 ---
-title: Bass
+title: Bass Brewery
 tags:
+- '1876'
+
+- beverages
+- brewing
+
 - typographic
 - script
 - geometric
-- beverages
-- brewing
+notes: |-
+  See also: [Bass Brewery logomark](/bass-2/)
 ---
 

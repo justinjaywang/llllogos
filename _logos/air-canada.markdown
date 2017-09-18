@@ -1,11 +1,16 @@
 ---
 title: Air Canada
 tags:
-- symbolic
-- circular
-- leaf
+- Hans Kleefield
+- Stewart & Morrison
+- '1964'
+
 - transportation
 - airlines
+
+- symbolic
+- circular
+- leafy
 pad: 2
 ---
 

@@ -1,9 +1,12 @@
 ---
 title: Coors
 tags:
-- typographic
-- script
+- '1954'
+
 - beverages
 - brewing
+
+- typographic
+- script
 ---
 

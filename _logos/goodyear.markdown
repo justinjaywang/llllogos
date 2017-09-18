@@ -1,10 +1,14 @@
 ---
 title: Goodyear
 tags:
-- typographic
-- wings
+- '1900'
+
 - manufacturing
 - automotive
+
+- typograph
+- wings
+- feet
 pad: 0
 ---
 

@@ -2,7 +2,9 @@
 {% assign tags = '' | split: '' %}{% comment %} initialize array {% endcomment %}
 {% for tag_array in tag_arrays %}
   {% for tag in tag_array %}
+    {% unless site.data.categories contains tag or site.data.designers contains tag or site.data.years contains tag %}
     {% assign tags = tags | push: tag %}
+    {% endunless %}
   {% endfor %}
 {% endfor %}
 {% assign tags = tags | uniq %}

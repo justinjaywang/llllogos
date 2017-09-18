@@ -1,9 +1,11 @@
 ---
 title: NBC
 tags:
-- symbolic
 - broadcasting
-- animal
-- peacock
+
+- typographic
+- sans-serif
+notes: |-
+  See also: [NBC logomark](/nbc-2/)
 ---
 

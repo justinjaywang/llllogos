@@ -1,8 +1,12 @@
 ---
 title: Bank of America
 tags:
-- monogrammatic
+- Landor Associates
+- '1969'
+
 - banks
+
+- monogrammatic
 - animal
 - bird
 - eagle

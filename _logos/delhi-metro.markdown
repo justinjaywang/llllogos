@@ -1,10 +1,11 @@
 ---
 title: Delhi Metro
 tags:
-- symbolic
-- circular
 - transportation
 - metro
+
+- symbolic
+- circular
 pad: 2
 ---
 

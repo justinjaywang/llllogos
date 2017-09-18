@@ -1,11 +1,15 @@
 ---
 title: Corona
 tags:
-- typographic
-- blackletter
+- '1925'
+
 - beverages
 - brewing
-- crown
+
+- typographic
+- blackletter
 pad: 0
+notes: |-
+  See also: [Corona logomark](/corona-2/)
 ---
 

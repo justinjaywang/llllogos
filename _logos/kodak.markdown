@@ -1,8 +1,13 @@
 ---
 title: Kodak
 tags:
-- typographic
+- Ogilvy & Mather
+- '2006'
+
 - electronics
 - imaging
+
+- typographic
+- sans-serif
 ---
 

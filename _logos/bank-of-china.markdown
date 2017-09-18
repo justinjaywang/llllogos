@@ -1,9 +1,16 @@
 ---
-title: Bank of China
+title: Bank of China (中国银行)
 tags:
+- Kan Tai-Keung
+- KL&K Design
+- '1981'
+
+- banks
+
 - monogrammatic
 - circular
-- banks
+- Chinese
+- coins
 pad: 2
 ---
 

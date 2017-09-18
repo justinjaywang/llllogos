@@ -1,7 +1,11 @@
 ---
 title: Chanel
 tags:
-- monogrammatic
+- Coco Chanel
+- '1925'
+
 - fashion
+
+- monogrammatic
 ---
 

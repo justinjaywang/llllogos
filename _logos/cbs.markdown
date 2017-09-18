@@ -1,9 +1,13 @@
 ---
 title: CBS
 tags:
+- William Golden
+- '1951'
+
+- broadcasting
+
 - symbolic
 - circular
-- broadcasting
 pad: 2
 ---
 

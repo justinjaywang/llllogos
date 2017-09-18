@@ -1,8 +1,9 @@
 ---
 title: Ricola
 tags:
+- miscellaneous
+
 - typographic
 - script
-- cough drops
 ---
 

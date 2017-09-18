@@ -1,9 +1,12 @@
 ---
 title: Heinz
 tags:
-- typographic
-- calligraphic
+- '1986'
+
 - food
+
+- typographic
+- script
 - inset
 ---
 

@@ -1,8 +1,12 @@
 ---
 title: Canadian National Railway
 tags:
-- monogrammatic
+- Allan Fleming
+- '1960'
+
 - transportation
 - rail
+
+- monogrammatic
 ---
 

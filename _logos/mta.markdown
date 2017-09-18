@@ -1,12 +1,14 @@
 ---
 title: Metropolitan Transportation Authority
 tags:
-- monogrammatic
-- circular
 - transportation
-- dimensional
 - bus
 - metro
+
+- monogrammatic
+- circular
+- dimensional
+- inset
 pad: 2
 ---
 

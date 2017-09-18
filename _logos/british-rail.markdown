@@ -1,9 +1,14 @@
 ---
 title: British Rail
 tags:
-- symbolic
-- cyclic
+- Gerry Barney
+- Design Research Unit
+- '1964'
+
 - transportation
 - rail
+
+- symbolic
+- arrow
 ---
 

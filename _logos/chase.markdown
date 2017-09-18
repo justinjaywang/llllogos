@@ -1,9 +1,14 @@
 ---
 title: Chase Bank
 tags:
+- Chermayeff & Geismar & Haviv
+- '1960'
+
+- banks
+
 - symbolic
 - radial
-- banks
+- octagon
 pad: 2
 ---
 

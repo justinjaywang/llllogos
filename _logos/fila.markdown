@@ -1,8 +1,10 @@
 ---
 title: Fila
 tags:
-- typographic
 - apparel
 - sportswear
+
+- typographic
+- rounded
 ---
 

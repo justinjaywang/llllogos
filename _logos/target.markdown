@@ -1,10 +1,12 @@
 ---
 title: Target
 tags:
+- retail
+
 - symbolic
 - circular
 - geometric
-- retail
+- circle
 pad: 2
 ---
 

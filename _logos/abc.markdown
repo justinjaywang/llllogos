@@ -1,9 +1,13 @@
 ---
 title: ABC
 tags:
+- Paul Rand
+- '1961'
+
+- broadcasting
+
 - typographic
 - graphic type
-- broadcasting
 - circular
 - inset
 pad: 2

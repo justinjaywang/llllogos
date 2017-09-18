@@ -1,9 +1,14 @@
 ---
 title: Lacoste
 tags:
-- symbolic
+- '2012'
+
 - apparel
-- animal
-- crocodile
+
+- typographic
+- sans-serif
+notes: |-
+  First version of logo in 1933. See also: [Lacoste logomark](/lacoste-2/)
+pad: 0
 ---
 

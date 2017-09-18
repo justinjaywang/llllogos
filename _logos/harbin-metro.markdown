@@ -1,11 +1,12 @@
 ---
 title: Harbin Metro
 tags:
+- transportation
+- metro
+
 - symbolic
 - circular
 - cyclic
-- transportation
-- metro
 pad: 2
 ---
 

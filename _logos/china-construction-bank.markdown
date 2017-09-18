@@ -1,8 +1,10 @@
 ---
 title: China Construction Bank
 tags:
-- monogrammatic
 - banks
+
+- monogrammatic
+- coins
 pad: 2
 ---
 

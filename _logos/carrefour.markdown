@@ -1,9 +1,15 @@
 ---
 title: Carrefour
 tags:
+- Miles Newlyn
+- '1966'
+
+- retail
+
 - alphabetical
 - C
-- retail
-- inset
+- negative space
+notes: |-
+  Modified in 2009.
 ---
 

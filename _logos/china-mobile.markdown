@@ -1,10 +1,15 @@
 ---
 title: China Mobile
 tags:
+- '1999'
+
+- telecommunications
+
 - symbolic
 - cyclic
 - stripes
-- telecommunications
 pad: 2
+notes: |-
+  Used until 2013.
 ---
 

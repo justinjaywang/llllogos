@@ -1,8 +1,10 @@
 ---
 title: TDK
 tags:
+- electronics
+
 - symbolic
 - geometric
-- electronics
+- triangle
 ---
 

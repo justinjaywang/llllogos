@@ -5,6 +5,6 @@ tags:
 - graphic type
 - transportation
 - bus
-- stripes
+- interline
 ---
 

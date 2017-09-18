@@ -1,10 +1,13 @@
 ---
 title: Fujifilm
 tags:
-- typographic
-- graphic type
+- '1980'
+
 - electronics
 - imaging
+
+- typographic
+- graphic type
 pad: 2
 ---
 

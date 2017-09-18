@@ -1,10 +1,11 @@
 ---
 title: Montblanc
 tags:
-- symbolic
 - luxury goods
-- circular
-- radial
-pad: 2
+
+- typographic
+- sans-serif
+notes: |-
+  See also: [Montblanc logomark](/montblanc-2/)
 ---
 

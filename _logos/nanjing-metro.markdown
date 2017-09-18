@@ -1,11 +1,13 @@
 ---
 title: Nanjing Metro
 tags:
+- transportation
+- metro
+
 - alphabetical
 - M
 - floral
-- transportation
-- metro
+- inset
 pad: 2
 ---
 

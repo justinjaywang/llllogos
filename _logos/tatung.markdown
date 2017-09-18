@@ -1,9 +1,12 @@
 ---
 title: Tatung
 tags:
-- symbolic
-- circular
 - electronics
-pad: 2
+
+- typographic
+- sans-serif
+notes: |-
+  See also: [Tatung logomark](/tatung-2/)
+pad: 0
 ---
 
