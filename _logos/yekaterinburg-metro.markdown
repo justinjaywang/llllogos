@@ -1,10 +1,11 @@
 ---
 title: Yekaterinburg Metro
 tags:
-- alphabetical
-- M
 - transportation
 - metro
+
+- alphabetical
+- M
 pad: 2
 ---
 

@@ -6,10 +6,9 @@ tags:
 - beverages
 - brewing
 
-- typographic
-- blackletter
-pad: 0
+- symbolic
+- crown
 notes: |-
-  See also: [Corona logomark](/corona-2/)
+  See also: [Corona wordmark](/corona-2/)
 ---
 

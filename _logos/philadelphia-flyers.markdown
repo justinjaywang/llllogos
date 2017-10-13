@@ -1,9 +1,14 @@
 ---
 title: Philadelphia Flyers
 tags:
-- symbolic
+- Sam Ciccone
+- Mel Richmond, Inc.
+- '1976'
+
 - sports
 - hockey
+
+- symbolic
 - wings
 ---
 

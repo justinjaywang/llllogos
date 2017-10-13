@@ -1,9 +1,13 @@
 ---
 title: NASA
 tags:
-- typographic
-- graphic type
+- Danne & Blackburn
+- '1975'
+
 - aeronautics
 - government
+
+- typographic
+- graphic type
 ---
 

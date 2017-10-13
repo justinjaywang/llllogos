@@ -5,10 +5,10 @@ tags:
 
 - apparel
 
-- typographic
-- sans-serif
+- symbolic
+- animal
+- crocodile
 notes: |-
-  First version of logo in 1933. See also: [Lacoste logomark](/lacoste-2/)
-pad: 0
+  First version of logo in 1933. See also: [Lacoste wordmark](/lacoste-2/)
 ---
 

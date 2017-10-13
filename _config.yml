@@ -49,7 +49,7 @@ pagination:
   permalink: '/:num/'
   title: ''
   limit: 0
-  sort_field: 'title'
+  sort_field: 'slug'
   sort_reverse: false
   collection: logos
   trail: 

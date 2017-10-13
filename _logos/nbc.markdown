@@ -1,11 +1,16 @@
 ---
 title: NBC
 tags:
+- Steff Geissbuhler
+- Chermayeff & Geismar & Haviv
+- '1986'
+
 - broadcasting
 
-- typographic
-- sans-serif
+- symbolic
+- animal
+- peacock
 notes: |-
-  See also: [NBC logomark](/nbc-2/)
+  See also: [NBC wordmark](/nbc-2/)
 ---
 

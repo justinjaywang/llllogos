@@ -1,10 +1,13 @@
 ---
 title: Ray-Ban
 tags:
+- '1937'
+
+- eyewear
+- apparel
+
 - typographic
 - script
-- apparel
-- eyewear
 pad: 0
 ---
 

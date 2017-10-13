@@ -3,9 +3,10 @@ title: Audi
 tags:
 - automotive
 
-- typographic
-- sans-serif
+- symbolic
+- rings
+pad: 0
 notes: |-
-  See also: [Audi logomark](/audi-2/)
+  The four rings were introduced in 1932 to represent the merger of four vehicle manufacturers, Audi, DKW, Horch and Wanderer. See also: [Audi wordmark](/audi-2/)
 ---
 

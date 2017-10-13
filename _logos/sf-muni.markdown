@@ -1,10 +1,14 @@
 ---
 title: San Francisco Municipal Railway
 tags:
-- typographic
-- graphic type
+- Landor Associates
+- '1975'
+
 - transportation
 - bus
+
+- typographic
+- graphic type
 - interline
 ---
 

@@ -1,15 +1,11 @@
 ---
 title: Montblanc
 tags:
-- '1913'
-
 - luxury goods
 
-- symbolic
-- circular
-- radial
-pad: 2
+- typographic
+- sans-serif
 notes: |-
-  See also: [Montblanc combination mark](/montblanc/)
+  See also: [Montblanc logomark](/montblanc/)
 ---
 

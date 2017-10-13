@@ -1,10 +1,11 @@
 ---
 title: Yokohama Municipal Subway
 tags:
-- symbolic
-- circular
 - transportation
 - metro
+
+- symbolic
+- circular
 - alphabetical
 - Y
 pad: 2

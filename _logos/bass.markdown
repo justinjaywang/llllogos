@@ -6,10 +6,11 @@ tags:
 - beverages
 - brewing
 
-- typographic
-- script
+- symbolic
 - geometric
+- triangle
 notes: |-
-  See also: [Bass Brewery logomark](/bass-2/)
+  The red triangle became the first image to be registered as a trademark in the UK. See also: [Bass Brewery wordmark](/bass-2/)
+pad: 2
 ---
 

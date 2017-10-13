@@ -1,9 +1,10 @@
 ---
 title: Miller
 tags:
-- typographic
-- script
 - beverages
 - brewing
+
+- typographic
+- script
 ---
 

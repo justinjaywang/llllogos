@@ -1,6 +1,9 @@
 ---
 title: Target
 tags:
+- Unimark International
+- '1968'
+
 - retail
 
 - symbolic

@@ -9,6 +9,7 @@ tags:
 - fire
 - water
 - publishing
+- square
 pad: 2
 notes: |-
   The HarperCollins logo represents the 1990 merger of Harper & Row (torch) and Collins Publishers (fountain).

@@ -1,8 +1,12 @@
 ---
 title: Louis Vuitton
 tags:
-- monogrammatic
+- Georges Vuitton
+- '1896'
+
 - fashion
+
+- monogrammatic
 pad: 2
 ---
 

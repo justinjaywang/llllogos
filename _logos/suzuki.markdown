@@ -1,9 +1,12 @@
 ---
 title: Suzuki
 tags:
+- '1958'
+
+- automotive
+
 - alphabetical
 - S
-- automotive
 pad: 2
 ---
 

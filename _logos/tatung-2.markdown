@@ -3,11 +3,10 @@ title: Tatung
 tags:
 - electronics
 
-- symbolic
-- circular
-- Chinese
-pad: 2
+- typographic
+- sans-serif
 notes: |-
-  See also: [Tatung wordmark](/tatung/)
+  See also: [Tatung logomark](/tatung/)
+pad: 0
 ---
 

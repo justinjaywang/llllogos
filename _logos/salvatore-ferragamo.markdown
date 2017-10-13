@@ -1,11 +1,14 @@
 ---
 title: Salvatore Ferragamo
 tags:
-- typographic
-- script
+- '1982'
+
 - fashion
 - luxury goods
 - apparel
+
+- typographic
+- script
 pad: 0
 ---
 

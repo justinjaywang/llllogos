@@ -1,8 +1,13 @@
 ---
 title: Pioneer
 tags:
-- typographic
+- '1998'
+
 - electronics
+
+- typographic
+- sans-serif
+
 pad: 0
 ---
 

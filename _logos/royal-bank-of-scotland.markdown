@@ -1,9 +1,10 @@
 ---
 title: Royal Bank of Scotland
 tags:
+- banks
+
 - symbolic
 - radial
-- banks
 pad: 2
 ---
 

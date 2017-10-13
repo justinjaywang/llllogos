@@ -1,8 +1,9 @@
 ---
 title: Taipei Fubon Bank
 tags:
-- monogrammatic
 - banks
+
+- monogrammatic
 pad: 2
 ---
 

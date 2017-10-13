@@ -1,10 +1,11 @@
 ---
 title: Taiwan Railways Administration
 tags:
-- symbolic
-- circular
 - transportation
 - rail
+
+- symbolic
+- circular
 pad: 2
 ---
 

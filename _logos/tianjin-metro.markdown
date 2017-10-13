@@ -1,11 +1,12 @@
 ---
 title: Tianjin Metro
 tags:
+- transportation
+- metro
+
 - alphabetical
 - T
 - circular
-- transportation
-- metro
 pad: 2
 ---
 

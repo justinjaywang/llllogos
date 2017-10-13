@@ -1,10 +1,11 @@
 ---
 title: Taipei Metro
 tags:
-- symbolic
-- cyclic
 - transportation
 - metro
+
+- symbolic
+- cyclic
 pad: 0
 ---
 
